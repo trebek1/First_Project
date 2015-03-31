@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>	
+		<title> Classmates App</title>
+	</head>
+	<body>
+		<h1> Here are all of your classmates: </h1>
+		<ul> 
+			<% 
+			for(var i = 0; i< classmates.length; i++){
+				%>
+					<li> Name: <%= classmates[i].name %>, Age <%= classmates[i].age %> </li>
+			<%} %>
+
+		</ul>
+
+		<p>
+			The number was: <%= someNumber %>; 
+		</p>
+	</body>
+</html>
